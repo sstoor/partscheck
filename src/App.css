@@ -1,5 +1,8 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +38,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.carpartlist {
+  display: flex;
+  flex-direction: row;
+  min-width: 300px;
+  background-color: #fff;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.right{
+
+
+
 }
