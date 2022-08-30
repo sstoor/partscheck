@@ -1,0 +1,16 @@
+.carpartlist {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  min-width: 300px;
+  background-color: #fff;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  
+}
+
+.right{
+    
+}

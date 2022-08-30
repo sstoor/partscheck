@@ -1,23 +1,19 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Cars from "./Cars";
 
-import { QueryClientProvider, QueryClient } from "react-query";
+import { QueryClientProvider, QueryClient, useQuery } from "react-query";
+
+
+const queryClient = new QueryClient();
 
 function App() {
-  const queryClient = new QueryClient();
+
 
   return (
     <QueryClientProvider client={queryClient}>
       <div className="App">
-        <h1>PartsCheck OEM Suppliers</h1>
-        <div className="carpartlist">
-          <div className="left">
-            <div className="Suppliername">Sup name</div>
-            <div className="stars">*****</div>
-            <div className="vehiclemake">make, make, make</div>
-          </div>
-          <div className="right">supplier state</div>
-        </div>
+        <Cars></Cars>
       </div>
     </QueryClientProvider>
   );
